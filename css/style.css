@@ -1,0 +1,21 @@
+html {
+  margin: 0;
+  padding: 0;
+}
+
+.header-section .main-pic {
+  width: 300px;
+}
+
+.tech-stack-section .tech-list .tech-block {
+  display: inline-block;
+  width: 260px;
+  height: 260px;
+  border-radius: 10%;
+  border: 1px solid black;
+}
+
+.tech-stack-section .tech-list .tech-block .title-underline {
+  position: absolute;
+}
+/*# sourceMappingURL=style.css.map */
