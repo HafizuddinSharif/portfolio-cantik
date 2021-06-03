@@ -9,23 +9,24 @@
 </head>
 <body>
     <!-- NAVIGATION BAR -->
-    <div>
+    <div class="navbar">
         <h2>Hafizuddin Sharif</h2>
         <nav>
             <ul>
-                <li>Home</li>
-                <li>My Tech</li>
-                <li>Portfolio</li>
-                <li>Contact Me</li>
+                <li><a href="">Home</a></li>
+                <li><a href="">My Tech</a></li>
+                <li><a href="">Portfolio</a></li>
+                <li><a href="">Contact Me</a></li>
             </ul>
         </nav>
+        <span class="iconify burger-menu" data-inline="false" data-icon="radix-icons:hamburger-menu" style="font-size: 25px;"></span>
     </div>
 
     <!-- HEADER -->
     <div class="header-section">
         <img class="main-pic" src="./assets/img/main-pic.png" alt="picture of me">
-        <div>
-            <h2>Hi! I am <span class="iconify" data-inline="false" data-icon="emojione:waving-hand-medium-skin-tone" style="font-size: 36px;"></span></h2>
+        <div class="personal-description">
+            <h2>Hi! I am <span class="iconify hand-wave" data-inline="false" data-icon="emojione:waving-hand-medium-skin-tone" style="font-size: 36px;"></span></h2>
             <h1>Hafizuddin Sharif Umar Sharif</h1>
             <p>An aspiring software engineer who love to design the web. Currently studying in University of Edinburgh</p>
         </div>
@@ -33,43 +34,84 @@
 
     <!-- TECH STACK -->
     <div class="tech-stack-section">
-        <h2>Tech I am familiar with</h2>
+        <h2><span class="blue-font">Tech</span> I am familiar with</h2>
         <div class="tech-list">
             <div class="tech-block">
                 <img class="title-underline" src="./assets/svg/rectangle-4.svg" alt="">
                 <h3>Front-end</h3>
-                <div>
-                    <span class="iconify" data-inline="false" data-icon="logos:tailwindcss-icon" style="font-size: 24px;"></span>
-                    <span class="iconify" data-inline="false" data-icon="logos:html-5" style="font-size: 48px;"></span>
-                    <span class="iconify" data-inline="false" data-icon="logos:javascript" style="font-size: 38px;"></span>
-                    <span class="iconify" data-inline="false" data-icon="logos:css-3" style="font-size: 48px;"></span>
+                <div class="tech-grid">
+                    <span class="iconify tech-icon" data-inline="false" data-icon="logos:html-5" style="font-size: 48px;"></span>
+                    <span class="iconify tech-icon" data-inline="false" data-icon="logos:tailwindcss-icon" style="font-size: 24px;"></span>
+                    <span class="iconify tech-icon" data-inline="false" data-icon="logos:javascript" style="font-size: 38px;"></span>
+                    <span class="iconify tech-icon" data-inline="false" data-icon="logos:css-3" style="font-size: 48px;"></span>
                 </div>
             </div>
             <div class="tech-block">
                 <img class="title-underline" src="./assets/svg/rectangle-4.svg" alt="">
                 <h3>Back-end</h3>
-                <div>
-                    <span class="iconify" data-inline="false" data-icon="logos:express" style="font-size: 16px;"></span>
-                    <span class="iconify" data-inline="false" data-icon="logos:c" style="font-size: 46px;"></span>
-                    <span class="iconify" data-inline="false" data-icon="logos:mysql" style="font-size: 42px;"></span>
-                    <span class="iconify" data-inline="false" data-icon="logos:java" style="font-size: 47px;"></span>
-                    <span class="iconify" data-inline="false" data-icon="logos:python" style="font-size: 38px;"></span>
+                <div class="tech-grid">
+                    <span class="iconify tech-icon" data-inline="false" data-icon="logos:express" style="font-size: 16px;"></span>
+                    <span class="iconify tech-icon" data-inline="false" data-icon="logos:c" style="font-size: 46px;"></span>
+                    <span class="iconify tech-icon" data-inline="false" data-icon="logos:mysql" style="font-size: 42px;"></span>
+                    <span class="iconify tech-icon" data-inline="false" data-icon="logos:java" style="font-size: 47px;"></span>
+                    <span class="iconify tech-icon" data-inline="false" data-icon="logos:python" style="font-size: 38px;"></span>
                 </div>
                 
             </div>
             <div class="tech-block">
                 <img class="title-underline" src="./assets/svg/rectangle-4.svg" alt="">
                 <h3>Miscellaneous</h3>
-                <div>
-                    <span class="iconify" data-inline="false" data-icon="logos:figma" style="font-size: 42px;"></span>
-                    <span class="iconify" data-inline="false" data-icon="logos:github-icon" style="font-size: 35px;"></span>
-                    <span class="iconify" data-inline="false" data-icon="logos:git-icon" style="font-size: 39px;"></span>
-                    <span class="iconify" data-inline="false" data-icon="vscode-icons:file-type-vscode" style="font-size: 40px;"></span>
-                    <span class="iconify" data-inline="false" data-icon="simple-icons:repl-dot-it" style="font-size: 35px;"></span>
-                    <span class="iconify" data-inline="false" data-icon="cib:notion" style="font-size: 35px;"></span>
+                <div class="tech-grid">
+                    <span class="iconify tech-icon " data-inline="false" data-icon="logos:figma" style="font-size: 42px;"></span>
+                    <span class="iconify tech-icon" data-inline="false" data-icon="logos:github-icon" style="font-size: 35px;"></span>
+                    <span class="iconify tech-icon" data-inline="false" data-icon="logos:git-icon" style="font-size: 39px;"></span>
+                    <span class="iconify tech-icon" data-inline="false" data-icon="vscode-icons:file-type-vscode" style="font-size: 40px;"></span>
+                    <span class="iconify tech-icon" data-inline="false" data-icon="simple-icons:repl-dot-it" style="font-size: 35px;"></span>
+                    <span class="iconify tech-icon" data-inline="false" data-icon="cib:notion" style="font-size: 35px;"></span>
                 </div>
                 
             </div>
+        </div>
+    </div>
+
+    <!-- PORTFOLIO -->
+    <div class="portfolio-section">
+        <h2>Portfolio of my work</h2>
+        <div class="portfolio-list">
+            <div class="portfolio-block">
+                <div>
+                    <h3>Sekolah Islam Hidayah Report System</h3>
+                    <p>Description: bla bla bla bla</p>
+                    <p>Tech stack: Express, MySQL</p>
+                </div>
+                <div></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- CONTACT ME -->
+    <form class="contact-me-section" action="" method="post">
+        <h2>Contact Me</h2>
+        <h3>Name</h3>
+        <input type="text" name="senderName">
+        <h3>Email</h3>
+        <input type="email" name="senderEmail">
+        <h3>Message</h3>
+        <textarea name="emailMessage" id="" cols="30" rows="10"></textarea>
+    </form>
+
+    <!-- FOOTER -->
+    <div class="footer-section">
+        <div>
+            <h3>Follow</h3>
+            <p>Twitter</p>
+            <p>Youtube</p>
+            <p>LinkedIn</p>
+            <p>Github</p>
+        </div>
+        <div>
+            <p>Hafizuddin Sharif 2021</p>
+            <p>hafizuddinshariff@gmail.com</p>
         </div>
     </div>
 
