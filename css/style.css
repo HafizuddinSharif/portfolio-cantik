@@ -1,4 +1,4 @@
-html {
+html, body {
   margin: 0;
   padding: 0;
   font-family: 'Roboto', sans-serif;
@@ -13,16 +13,36 @@ h2 {
   font-size: 24px;
 }
 
+h3 {
+  font-size: 18px;
+}
+
 .blue-font {
   color: #39B0FF;
 }
 
+p {
+  font-size: 12px;
+}
+
 .navbar {
+  display: inline-block;
+  width: 300px;
+}
+
+.navbar .navbar2 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.navbar #burgerMenu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .navbar .burger-menu {
@@ -30,10 +50,33 @@ h2 {
   display: -ms-flexbox;
   display: flex;
   margin: auto 0;
+  cursor: pointer;
+  font-size: 25px;
 }
 
 .navbar nav {
   display: none;
+}
+
+.navbar ul {
+  background-color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 0;
+  position: absolute;
+  top: 67.83px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  height: 30vh;
+  z-index: 100;
 }
 
 .navbar li {
@@ -68,6 +111,15 @@ h2 {
   top: 8px;
 }
 
+.tech-stack-section {
+  margin-top: 100px;
+}
+
+.tech-stack-section .tech-list {
+  display: inline-block;
+  width: 260px;
+}
+
 .tech-stack-section .tech-list .tech-block {
   display: inline-block;
   position: relative;
@@ -76,7 +128,7 @@ h2 {
   -webkit-box-shadow: 5px 7px 25px 1px rgba(0, 0, 0, 0.25);
           box-shadow: 5px 7px 25px 1px rgba(0, 0, 0, 0.25);
   border-radius: 20px;
-  margin-top: 32px;
+  margin-top: 70px;
 }
 
 .tech-stack-section .tech-list .tech-block .tech-grid {
@@ -102,5 +154,151 @@ h2 {
   top: 1.8rem;
   right: 2.7rem;
   z-index: 9;
+}
+
+.portfolio-section {
+  margin-top: 100px;
+  display: inline-block;
+  width: 310px;
+}
+
+.portfolio-section .portfolio-block {
+  margin: 70px 0;
+}
+
+.portfolio-section .portfolio-img {
+  display: inline-block;
+  width: 300px;
+  height: 200px;
+  border-radius: 30px;
+  -webkit-box-shadow: 5px 7px 25px 1px rgba(0, 0, 0, 0.25);
+          box-shadow: 5px 7px 25px 1px rgba(0, 0, 0, 0.25);
+}
+
+.portfolio-section .si-hidayah {
+  background: no-repeat center/150% url("../assets/img/si-hidayah-report.png");
+}
+
+.portfolio-section .simon-game {
+  background: no-repeat top/145% url("../assets/img/simon-game-snip.jpg");
+}
+
+.portfolio-section .simple-ecommerce {
+  background: no-repeat left/150% url("../assets/img/simple-e-commerce.png");
+}
+
+.portfolio-section h3 {
+  font-style: bold;
+}
+
+.portfolio-section .portfolio-description {
+  text-align: left;
+}
+
+.portfolio-section .portfolio-description p {
+  margin: 2px;
+}
+
+.portfolio-section .portfolio-description p:last-child {
+  margin-bottom: 12px;
+}
+
+.portfolio-section .the-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.portfolio-section .btn {
+  display: inline-block;
+  width: 130px;
+  height: 32px;
+  border-radius: 10px;
+  padding: 6px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.portfolio-section .live-demo {
+  color: white;
+  background-color: #39B0FF;
+}
+
+.portfolio-section .view-code {
+  color: #39B0FF;
+  border: 2px solid #39B0FF;
+}
+
+.contact-me-section {
+  margin-top: 60px;
+}
+
+.contact-me-section .form-box {
+  display: inline-block;
+  width: 300px;
+  text-align: left;
+}
+
+.contact-me-section .form-box .h3 {
+  font-style: bold;
+}
+
+.contact-me-section .form-box label {
+  display: block;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 200%;
+  color: #0064A7;
+}
+
+.contact-me-section .form-box input {
+  width: 300px;
+  border: 1px solid #72C7FF;
+}
+
+.contact-me-section .form-box textarea {
+  width: 300px;
+  resize: none;
+  border: 1px solid #72C7FF;
+}
+
+.footer-section {
+  margin-top: 100px;
+  padding: 23px 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-color: #72C7FF;
+}
+
+.footer-section p {
+  margin: 0;
+}
+
+.footer-section .footer-link h3 {
+  margin: 0;
+  color: white;
+  font-size: 24px;
+}
+
+.footer-section .footer-link a {
+  display: block;
+  color: #0064A7;
+  text-decoration: none;
+  margin: 10px 0;
+  font-weight: 600;
+}
+
+.footer-section .footer-copyright {
+  color: #0064A7;
+  font-size: 18px;
+}
+
+.footer-section .footer-copyright p {
+  margin: 5px 0;
 }
 /*# sourceMappingURL=style.css.map */

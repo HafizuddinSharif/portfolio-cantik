@@ -5,13 +5,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
-    <title>Document</title>
+    <title>Hafizuddin Sharif</title>
 </head>
 <body>
     <!-- NAVIGATION BAR -->
     <div class="navbar">
-        <h2>Hafizuddin Sharif</h2>
-        <nav>
+        <div class="navbar2">
+            <h2 id="thisBaby">Hafizuddin Sharif</h2>
+            <span id="burgerMenu" >
+                <span class="iconify burger-menu" data-inline="false" data-icon="radix-icons:hamburger-menu"></span>
+            </span>
+        </div>
+        
+        <nav id="navbar">
             <ul>
                 <li><a href="">Home</a></li>
                 <li><a href="">My Tech</a></li>
@@ -19,7 +25,7 @@
                 <li><a href="">Contact Me</a></li>
             </ul>
         </nav>
-        <span class="iconify burger-menu" data-inline="false" data-icon="radix-icons:hamburger-menu" style="font-size: 25px;"></span>
+        
     </div>
 
     <!-- HEADER -->
@@ -76,40 +82,74 @@
 
     <!-- PORTFOLIO -->
     <div class="portfolio-section">
-        <h2>Portfolio of my work</h2>
+        <h2><span class="blue-font">Portfolio</span> of my work</h2>
         <div class="portfolio-list">
+
             <div class="portfolio-block">
-                <div>
+                <div class="portfolio-img si-hidayah"></div>
+                <div class="portfolio-description">
                     <h3>Sekolah Islam Hidayah Report System</h3>
                     <p>Description: bla bla bla bla</p>
                     <p>Tech stack: Express, MySQL</p>
                 </div>
-                <div></div>
+                <div class="the-btn">
+                    <a class="live-demo btn" href="">Live demo</a>
+                    <a class="view-code btn" href="">View code</a>
+                </div>
             </div>
+
+            <div class="portfolio-block">
+                <div class="portfolio-img simple-ecommerce"></div>
+                <div class="portfolio-description">
+                    <h3>Sekolah Islam Hidayah Report System</h3>
+                    <p>Description: bla bla bla bla</p>
+                    <p>Tech stack: Express, MySQL</p>
+                </div>
+                <div class="the-btn">
+                    <a class="live-demo btn" href="">Live demo</a>
+                    <a class="view-code btn" href="">View code</a>
+                </div>
+            </div>
+
+            <div class="portfolio-block">
+                <div class="portfolio-img simon-game"></div>
+                <div class="portfolio-description">
+                    <h3>Sekolah Islam Hidayah Report System</h3>
+                    <p>Description: bla bla bla bla</p>
+                    <p>Tech stack: Express, MySQL</p>
+                </div>
+                <div class="the-btn">
+                    <a class="live-demo btn" href="">Live demo</a>
+                    <a class="view-code btn" href="">View code</a>
+                </div>
+            </div>
+
         </div>
     </div>
 
     <!-- CONTACT ME -->
     <form class="contact-me-section" action="" method="post">
-        <h2>Contact Me</h2>
-        <h3>Name</h3>
-        <input type="text" name="senderName">
-        <h3>Email</h3>
-        <input type="email" name="senderEmail">
-        <h3>Message</h3>
-        <textarea name="emailMessage" id="" cols="30" rows="10"></textarea>
+        <div class="form-box">
+            <h2>Contact Me</h2>
+            <label for="senderName">Name</label>
+            <input type="text" name="senderName">
+            <label for="senderEmail">Email</label>
+            <input type="email" name="senderEmail">
+            <label for="emailMessage">Message</label>
+            <textarea name="emailMessage" id="" cols="30" rows="10"></textarea>
+        </div>  
     </form>
 
     <!-- FOOTER -->
     <div class="footer-section">
-        <div>
+        <div class="footer-link">
             <h3>Follow</h3>
-            <p>Twitter</p>
-            <p>Youtube</p>
-            <p>LinkedIn</p>
-            <p>Github</p>
+            <a href="">Twitter</a>
+            <a href="">Youtube</a>
+            <a href="">LinkedIn</a>
+            <a href="">Github</a>
         </div>
-        <div>
+        <div class="footer-copyright">
             <p>Hafizuddin Sharif 2021</p>
             <p>hafizuddinshariff@gmail.com</p>
         </div>
@@ -117,6 +157,7 @@
 
 
     <script src="https://code.iconify.design/1/1.0.6/iconify.min.js"></script>
+    <script src="index.js"></script>
 
 </body>
-</html>
+</html> 
