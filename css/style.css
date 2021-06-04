@@ -32,6 +32,43 @@ p {
   transition: opacity 3s;
 }
 
+.blob {
+  position: absolute;
+  top: 0;
+}
+
+.b-1 {
+  width: 384px;
+  height: 393px;
+  left: -150px;
+  top: 876px;
+  z-index: -1;
+}
+
+.b-2 {
+  width: 582.82px;
+  height: 646.41px;
+  right: 0px;
+  top: 1607px;
+  z-index: -1;
+}
+
+.b-3 {
+  width: 335px;
+  height: 296px;
+  left: -67px;
+  top: 2539px;
+  z-index: -1;
+}
+
+.b-4 {
+  width: 509px;
+  height: 608px;
+  left: 96px;
+  top: 3354px;
+  z-index: -1;
+}
+
 .navbar {
   display: inline-block;
   width: 300px;
@@ -129,6 +166,7 @@ p {
 
 .tech-stack-section {
   margin-top: 100px;
+  z-index: 20;
 }
 
 .tech-stack-section .tech-list {
@@ -145,6 +183,7 @@ p {
           box-shadow: 5px 7px 25px 1px rgba(0, 0, 0, 0.25);
   border-radius: 20px;
   margin-top: 70px;
+  background-color: white;
 }
 
 .tech-stack-section .tech-list .tech-block .tech-grid {
@@ -162,14 +201,14 @@ p {
 
 .tech-stack-section .tech-list .tech-block h3 {
   position: relative;
-  z-index: 10;
+  z-index: 30;
 }
 
 .tech-stack-section .tech-list .tech-block .title-underline {
   position: absolute;
   top: 1.8rem;
   right: 2.7rem;
-  z-index: 9;
+  z-index: 25;
 }
 
 .portfolio-section {
