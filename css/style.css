@@ -62,16 +62,28 @@ p {
 }
 
 .b-4 {
-  width: 509px;
-  height: 608px;
-  left: 96px;
-  top: 3354px;
+  width: 200px;
+  height: 508px;
+  right: 0px;
+  top: 3154px;
   z-index: -1;
+}
+
+.darken {
+  position: absolute;
+  display: inline-block;
+  background-color: black;
+  opacity: 50%;
+  height: 100%;
+  width: 100%;
+  z-index: 110;
+  top: 0;
+  left: 0;
 }
 
 .navbar {
   display: inline-block;
-  width: 300px;
+  width: 100%;
 }
 
 .navbar .navbar2 {
@@ -79,10 +91,10 @@ p {
   display: -ms-flexbox;
   display: flex;
   position: relative;
-  z-index: 110;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  width: 100%;
+  z-index: 130;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   background-color: white;
 }
 
@@ -98,13 +110,13 @@ p {
   display: flex;
   margin: auto 0;
   cursor: pointer;
-  font-size: 25px;
+  width: 25px;
 }
 
 .navbar .close-menu {
   margin: auto 0;
   cursor: pointer;
-  font-size: 25px;
+  width: 25px;
 }
 
 .navbar nav {
@@ -122,14 +134,14 @@ p {
           flex-direction: column;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  padding: 0;
+  padding: 0 0 20px 0;
   position: absolute;
   top: -250px;
   left: 0;
   right: 0;
   margin: 0 auto;
   height: 30vh;
-  z-index: 100;
+  z-index: 120;
 }
 
 .navbar li {
@@ -139,6 +151,23 @@ p {
 .navbar li a {
   color: black;
   text-decoration: none;
+}
+
+.navbar li .btn {
+  display: inline-block;
+  width: 130px;
+  height: 32px;
+  border-radius: 10px;
+  padding: 6px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-decoration: none;
+  color: white;
+  font-style: bold;
+  background: -webkit-gradient(linear, left top, left bottom, from(#A2DAFF), color-stop(67.71%, #0099FE));
+  background: linear-gradient(180deg, #A2DAFF 0%, #0099FE 67.71%);
+  -webkit-box-shadow: 0px 6px 14px 1px #A2DAFF;
+          box-shadow: 0px 6px 14px 1px #A2DAFF;
 }
 
 .header-section .main-pic {
@@ -165,7 +194,8 @@ p {
 }
 
 .tech-stack-section {
-  margin-top: 100px;
+  margin-top: 90px;
+  padding-top: 10px;
   z-index: 20;
 }
 
@@ -320,6 +350,14 @@ p {
   width: 300px;
   resize: none;
   border: 1px solid #72C7FF;
+}
+
+.contact-me-section .form-box input:focus, .contact-me-section .form-box textarea:focus {
+  outline: none !important;
+  border-color: #39B0FF;
+  -webkit-box-shadow: 0 0 10px #719ECE;
+          box-shadow: 0 0 10px #719ECE;
+  caret-color: #39B0FF;
 }
 
 .footer-section {

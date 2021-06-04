@@ -13,8 +13,8 @@ const openNavbar = () => {
         closeMenu.style.display = 'flex';
 
         navBar.animate([
-            {transform: 'translate(0, 0)'},
-            {transform: 'translate(0, 250px)'}
+            {transform: 'translate(0, 55px)', offset: 0},
+            {transform: 'translate(0, 250px)', offset: 1}
         ], {
             duration: 1000,
             easing: 'ease-in-out',
@@ -50,6 +50,11 @@ const openNavbar = () => {
 
 burgerMenu.onclick = openNavbar;
 closeMenu.onclick = openNavbar;
+
+const navButtons = document.getElementsByClassName('nav-btn');
+for (var i = 0, len = navButtons.length; i < len; i++) {
+  navButtons[i].addEventListener("click", openNavbar);
+}
 
 
 

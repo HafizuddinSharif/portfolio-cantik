@@ -12,8 +12,9 @@
     <img class="blob b-2" src="./assets/svg/blob-2.svg" alt="">
     <img class="blob b-3" src="./assets/svg/blob-3.svg" alt="">
     <img class="blob b-4" src="./assets/svg/blob-4.svg" alt="">
+
     <!-- NAVIGATION BAR -->
-    <div class="navbar">
+    <div class="navbar" id="home">
         <div class="navbar2">
             <h2 id="thisBaby">Hafizuddin Sharif</h2>
             <span id="burgerMenu" >
@@ -26,17 +27,17 @@
         
         <nav>
             <ul id="navbar">
-                <li><a href="">Home</a></li>
-                <li><a href="">My Tech</a></li>
-                <li><a href="">Portfolio</a></li>
-                <li><a href="">Contact Me</a></li>
+                <li><a class="nav-btn" href="#home">Home</a></li>
+                <li><a class="nav-btn" href="#tech-stack-section">My Tech</a></li>
+                <li><a class="nav-btn" href="#portfolio-section">Portfolio</a></li>
+                <li><a class="nav-btn btn contact-me-btn" href="#contact-me-section">Contact Me</a></li>
             </ul>
         </nav>
         
     </div>
 
     <!-- HEADER -->
-    <div class="header-section">
+    <div class="header-section" id="header-section">
         <img class="main-pic" src="./assets/img/main-pic.png" alt="picture of me">
         <div class="personal-description">
             <h2>Hi! I am <img class="iconify hand-wave" src="./assets/svg/waving-hand.svg" alt=""></span></h2>
@@ -46,7 +47,7 @@
     </div>
 
     <!-- TECH STACK -->
-    <div class="tech-stack-section">
+    <div class="tech-stack-section" id="tech-stack-section">
         <h2><span class="blue-font">Tech</span> I am familiar with</h2>
         <div class="tech-list">
             <div class="tech-block">
@@ -88,7 +89,7 @@
     </div>
 
     <!-- PORTFOLIO -->
-    <div class="portfolio-section">
+    <div class="portfolio-section" id="portfolio-section">
         <h2><span class="blue-font">Portfolio</span> of my work</h2>
         <div class="portfolio-list">
 
@@ -96,38 +97,38 @@
                 <div class="portfolio-img si-hidayah"></div>
                 <div class="portfolio-description">
                     <h3>Sekolah Islam Hidayah Report System</h3>
-                    <p>Description: bla bla bla bla</p>
-                    <p>Tech stack: Express, MySQL</p>
+                    <p>Description: Report system for any vandalisation or damage. Not for public use.</p>
+                    <p>Tech stack: Express, MySQL, EJS</p>
                 </div>
                 <div class="the-btn">
-                    <a class="live-demo btn" href="">Live demo</a>
-                    <a class="view-code btn" href="">View code</a>
+                    <a class="live-demo btn" href="https://sihidayah-aduan.herokuapp.com/aduan" target="_blank">Live demo</a>
+                    <a class="view-code btn" href="https://github.com/HafizuddinSharif/SistemAduanSIHidayah" target="_blank">View code</a>
                 </div>
             </div>
 
             <div class="portfolio-block">
                 <div class="portfolio-img simple-ecommerce"></div>
                 <div class="portfolio-description">
-                    <h3>Sekolah Islam Hidayah Report System</h3>
-                    <p>Description: bla bla bla bla</p>
-                    <p>Tech stack: Express, MySQL</p>
+                    <h3>Simple E-Commerce Design</h3>
+                    <p>Description: A simple e-commerce front-end design</p>
+                    <p>Tech stack: Express, EJS</p>
                 </div>
                 <div class="the-btn">
-                    <a class="live-demo btn" href="">Live demo</a>
-                    <a class="view-code btn" href="">View code</a>
+                    <a class="live-demo btn" href="https://shopping-cart-supplycart.herokuapp.com/" target="_blank">Live demo</a>
+                    <a class="view-code btn" href="https://github.com/HafizuddinSharif/interview-case-study" target="_blank">View code</a>
                 </div>
             </div>
 
             <div class="portfolio-block">
                 <div class="portfolio-img simon-game"></div>
                 <div class="portfolio-description">
-                    <h3>Sekolah Islam Hidayah Report System</h3>
-                    <p>Description: bla bla bla bla</p>
-                    <p>Tech stack: Express, MySQL</p>
+                    <h3>The Simon Game</h3>
+                    <p>Description: A simple game created using Vanilla JS</p>
+                    <p>Tech stack: HTML, CSS, JavaScript</p>
                 </div>
                 <div class="the-btn">
-                    <a class="live-demo btn" href="">Live demo</a>
-                    <a class="view-code btn" href="">View code</a>
+                    <a class="live-demo btn" href="https://hafizuddinsharif.github.io/SimonGame/" target="_blank">Live demo</a>
+                    <a class="view-code btn" href="https://github.com/HafizuddinSharif/SimonGame" target="_blank">View code</a>
                 </div>
             </div>
 
@@ -135,7 +136,7 @@
     </div>
 
     <!-- CONTACT ME -->
-    <form class="contact-me-section" action="" method="post">
+    <form class="contact-me-section" action="" method="post" id="contact-me-section">
         <div class="form-box">
             <h2>Contact Me</h2>
             <label for="senderName">Name</label>
@@ -151,10 +152,10 @@
     <div class="footer-section">
         <div class="footer-link">
             <h3>Follow</h3>
-            <a href="">Twitter</a>
-            <a href="">Youtube</a>
-            <a href="">LinkedIn</a>
-            <a href="">Github</a>
+            <a href="https://www.twitter.com/sharippu" target="_blank">Twitter</a>
+            <a href="http://www.youtube.com/c/HafizuddinSharif" target="_blank">Youtube</a>
+            <a href="https://www.linkedin.com/in/hafizuddin-sharif-umar-sharif" target="_blank">LinkedIn</a>
+            <a href="https://github.com/HafizuddinSharif" target="_blank">Github</a>
         </div>
         <div class="footer-copyright">
             <p>Hafizuddin Sharif 2021</p>
