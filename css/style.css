@@ -72,6 +72,27 @@ p {
   z-index: -1;
 }
 
+@media only screen and (min-width: 768px) {
+  .b-1 {
+    width: 600px;
+    top: 453px;
+    left: 300px;
+  }
+  .b-2 {
+    top: 1007px;
+    width: 100%;
+    right: 20px;
+  }
+  .b-3 {
+    top: 1539px;
+  }
+  .b-4 {
+    top: 2254px;
+    right: 100px;
+    width: 650px;
+  }
+}
+
 .navbar {
   display: inline-block;
   width: 100%;
