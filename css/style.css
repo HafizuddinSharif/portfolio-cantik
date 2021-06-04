@@ -311,14 +311,21 @@ p {
 }
 
 @media only screen and (min-width: 768px) {
+  .tech-stack-section h2 {
+    display: inline-block;
+    margin: auto;
+    width: 70%;
+    text-align: left;
+  }
   .tech-stack-section .tech-list {
     margin: auto;
-    width: 80%;
+    width: 70%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
 }
 
