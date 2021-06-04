@@ -1,8 +1,11 @@
 html, body {
+  position: relative;
   margin: 0;
   padding: 0;
   font-family: 'Roboto', sans-serif;
   text-align: center;
+  background-color: #FFF;
+  z-index: -1;
 }
 
 h1 {
@@ -69,18 +72,6 @@ p {
   z-index: -1;
 }
 
-.darken {
-  position: absolute;
-  display: inline-block;
-  background-color: black;
-  opacity: 50%;
-  height: 100%;
-  width: 100%;
-  z-index: 110;
-  top: 0;
-  left: 0;
-}
-
 .navbar {
   display: inline-block;
   width: 100%;
@@ -105,9 +96,6 @@ p {
 }
 
 .navbar .burger-menu {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   margin: auto 0;
   cursor: pointer;
   width: 25px;
@@ -170,6 +158,69 @@ p {
           box-shadow: 0px 6px 14px 1px #A2DAFF;
 }
 
+@media only screen and (min-width: 768px) {
+  .navbar {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 800px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin: auto;
+  }
+  .navbar .navbar2 {
+    display: inline;
+    width: auto;
+  }
+  .navbar .navbar2 h2 {
+    display: inline-block;
+    width: 200px;
+  }
+  .navbar #burgerMenu {
+    display: none;
+  }
+  .navbar nav {
+    position: static;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 650px;
+  }
+  .navbar ul {
+    position: static;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    padding: 0;
+    height: auto;
+    margin: auto 0 auto auto;
+  }
+  .navbar li {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100px;
+  }
+  .navbar li a {
+    margin: auto;
+  }
+  .navbar li .btn {
+    width: 100%;
+  }
+  .navbar li:last-child {
+    width: 190px;
+    height: 50px;
+  }
+  .navbar li:last-child .btn {
+    margin: auto 10px;
+  }
+}
+
 .header-section .main-pic {
   width: 300px;
 }
@@ -191,6 +242,24 @@ p {
 .header-section .personal-description .hand-wave {
   position: relative;
   top: 8px;
+}
+
+@media only screen and (min-width: 768px) {
+  .header-section {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .header-section .personal-description {
+    margin: auto 130px auto 0;
+  }
 }
 
 .tech-stack-section {

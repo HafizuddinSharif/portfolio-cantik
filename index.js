@@ -8,12 +8,14 @@ let navbarOpen = false;
 
 const openNavbar = () => {
 
+    if (!(window.screen.width < 768)) return
+
     if (!navbarOpen) {
         burgerMenu.style.display = 'none';
         closeMenu.style.display = 'flex';
 
         navBar.animate([
-            {transform: 'translate(0, 55px)', offset: 0},
+            {transform: 'translate(0, 0)', offset: 0},
             {transform: 'translate(0, 250px)', offset: 1}
         ], {
             duration: 1000,
