@@ -310,6 +310,18 @@ p {
   z-index: 25;
 }
 
+@media only screen and (min-width: 768px) {
+  .tech-stack-section .tech-list {
+    margin: auto;
+    width: 80%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+}
+
 .portfolio-section {
   margin-top: 100px;
   display: inline-block;
