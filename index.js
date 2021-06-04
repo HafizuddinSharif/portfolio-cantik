@@ -1,32 +1,55 @@
-let burgerMenu = document.getElementById('burgerMenu');
-let y = document.getElementById('another');
-let d = document.getElementById('thisBaby');
+const burgerMenu = document.getElementById('burgerMenu');
+const closeMenu = document.getElementById('closeMenu');
+const navBar = document.getElementById('navbar');
 
 // Handling navbar
 
-const originalIcon = burgerMenu.innerHTML
-let navBarOpen = false;
+let navbarOpen = false;
 
 const openNavbar = () => {
 
-    let changedIcon = '<span id="BurgerMenu" class="iconify burger-menu" data-inline="false" data-icon="akar-icons:cross"></span>'
-    
+    if (!navbarOpen) {
+        burgerMenu.style.display = 'none';
+        closeMenu.style.display = 'flex';
 
-    const navBar = document.getElementById('navbar')
+        navBar.animate([
+            {transform: 'translate(0, 0)'},
+            {transform: 'translate(0, 250px)'}
+        ], {
+            duration: 1000,
+            easing: 'ease-in-out',
+            delay: 0,
+            iterations: 1,
+            direction: 'normal',
+            fill: 'forwards'
+        })
 
+        navbarOpen = true;
 
-    if (!navBarOpen) {
-        navBar.style.display = 'block';
-        burgerMenu.innerHTML = changedIcon;
-        navBarOpen = true;
     } else {
-        navBar.style.display = 'none';
-        burgerMenu.innerHTML = originalIcon;
-        navBarOpen = false;
+        burgerMenu.style.display = 'flex';
+        closeMenu.style.display = 'none';
+
+        navBar.animate([
+            {transform: 'translate(0, 250px)'},
+            {transform: 'translate(0, -250px)'}
+        ], {
+            duration: 1000,
+            easing: 'ease-in-out',
+            delay: 0,
+            iterations: 1,
+            direction: 'normal',
+            fill: 'forwards'
+        })
+
+        navbarOpen = false;
     }
+
+    
 }
 
-
-
 burgerMenu.onclick = openNavbar;
+closeMenu.onclick = openNavbar;
+
+
 

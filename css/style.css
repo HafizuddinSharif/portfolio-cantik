@@ -25,6 +25,13 @@ p {
   font-size: 12px;
 }
 
+.hidden {
+  display: none;
+  opacity: 100%;
+  -webkit-transition: opacity 3s;
+  transition: opacity 3s;
+}
+
 .navbar {
   display: inline-block;
   width: 300px;
@@ -34,9 +41,12 @@ p {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  position: relative;
+  z-index: 110;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  background-color: white;
 }
 
 .navbar #burgerMenu {
@@ -54,8 +64,14 @@ p {
   font-size: 25px;
 }
 
+.navbar .close-menu {
+  margin: auto 0;
+  cursor: pointer;
+  font-size: 25px;
+}
+
 .navbar nav {
-  display: none;
+  position: relative;
 }
 
 .navbar ul {
@@ -71,7 +87,7 @@ p {
       justify-content: space-around;
   padding: 0;
   position: absolute;
-  top: 67.83px;
+  top: -250px;
   left: 0;
   right: 0;
   margin: 0 auto;
