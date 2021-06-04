@@ -376,16 +376,17 @@ p {
   margin-bottom: 12px;
 }
 
-.portfolio-section .the-btn {
+.portfolio-section .portfolio-description .the-btn {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  margin-top: 20px;
 }
 
-.portfolio-section .btn {
+.portfolio-section .portfolio-description .btn {
   display: inline-block;
   width: 130px;
   height: 32px;
@@ -395,16 +396,57 @@ p {
           box-sizing: border-box;
   text-decoration: none;
   font-weight: 500;
+  text-align: center;
 }
 
-.portfolio-section .live-demo {
+.portfolio-section .portfolio-description .live-demo {
   color: white;
   background-color: #39B0FF;
 }
 
-.portfolio-section .view-code {
+.portfolio-section .portfolio-description .view-code {
   color: #39B0FF;
   border: 2px solid #39B0FF;
+}
+
+@media only screen and (min-width: 768px) {
+  .portfolio-section {
+    width: 100%;
+  }
+  .portfolio-section h2 {
+    display: inline-block;
+    margin: auto;
+    width: 70%;
+    text-align: left;
+  }
+  .portfolio-section .portfolio-list {
+    width: 85%;
+    margin-left: auto;
+  }
+  .portfolio-section .portfolio-list .portfolio-block {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .portfolio-section .portfolio-list .portfolio-block .portfolio-description {
+    margin: auto 0;
+  }
+  .portfolio-section .portfolio-list .portfolio-block .the-btn {
+    width: 300px;
+  }
+  .portfolio-section .portfolio-list .portfolio-block .portfolio-img {
+    height: 300px;
+    width: 500px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+  }
 }
 
 .contact-me-section {
