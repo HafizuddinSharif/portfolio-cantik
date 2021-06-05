@@ -184,7 +184,7 @@ p {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    width: 800px;
+    width: 70%;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
@@ -274,12 +274,31 @@ p {
     -webkit-box-direction: reverse;
         -ms-flex-direction: row-reverse;
             flex-direction: row-reverse;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin: auto;
+    margin-top: 30px;
+    width: 70%;
   }
   .header-section .personal-description {
-    margin: auto 130px auto 0;
+    width: 50%;
+    margin: auto 0;
+  }
+  .header-section .personal-description h2 {
+    font-size: 36px;
+  }
+  .header-section .personal-description h1 {
+    font-size: 46px;
+  }
+  .header-section .personal-description p {
+    font-size: 18px;
+  }
+  .header-section .personal-description .hand-wave {
+    width: 52px;
+  }
+  .header-section .main-pic {
+    width: 400px;
   }
 }
 
@@ -480,8 +499,10 @@ p {
   text-align: left;
 }
 
-.contact-me-section .form-box .h3 {
-  font-style: bold;
+.contact-me-section .form-box h2 {
+  font-weight: bold;
+  padding: 10px 0;
+  margin-bottom: 30px;
 }
 
 .contact-me-section .form-box label {
