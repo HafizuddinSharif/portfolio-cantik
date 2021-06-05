@@ -585,4 +585,57 @@ p {
 .footer-section .footer-copyright p {
   margin: 5px 0;
 }
+
+.footer-section .footer-copyright .hidden {
+  display: none;
+  width: 10px;
+}
+
+@media only screen and (min-width: 768px) {
+  .footer-section {
+    padding: 15px 15%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .footer-section .footer-link {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 60%;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .footer-section .footer-link h3 {
+    margin-right: auto;
+  }
+  .footer-section .footer-link a {
+    margin: auto;
+  }
+  .footer-section .footer-copyright {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .footer-section .footer-copyright p {
+    margin: auto;
+  }
+  .footer-section .footer-copyright .hidden {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
 /*# sourceMappingURL=style.css.map */
