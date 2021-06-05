@@ -540,6 +540,9 @@ p {
     width: 70%;
     margin: auto;
   }
+  .contact-me-section .form-box {
+    width: 700px;
+  }
   .contact-me-section h2 {
     display: inline-block;
     margin: auto;
