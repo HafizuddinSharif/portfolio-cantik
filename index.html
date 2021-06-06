@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="icon" href="./assets/img/favicon.ico">
     <title>Hafizuddin Sharif</title>
 </head>
 <body>
@@ -136,15 +137,28 @@
     </div>
 
     <!-- CONTACT ME -->
-    <form class="contact-me-section" action="" method="post" id="contact-me-section">
+    <form class="contact-me-section gform"  method="post" id="contact-me-section" 
+    action="https://script.google.com/macros/s/AKfycbwJF05NGObq9xRqvFYOKXkXTTzOJYjzxW_RuyWL/exec">
         <div class="form-box">
             <h2>Want to <span class="blue-font">work</span> with <span class="blue-font">me</span>? Contact Me!</h2>
-            <label for="senderName">Name</label>
-            <input type="text" name="senderName">
-            <label for="senderEmail">Email</label>
-            <input type="email" name="senderEmail">
-            <label for="emailMessage">Message</label>
-            <textarea name="emailMessage" id="" cols="30" rows="10"></textarea>
+
+            <label for="name">Name</label>
+            <input type="text" name="name" pattern="^[a-zA-Z]+$" required
+            oninvalid="this.setCustomValidity('No numbers or special characters')"
+            oninput="this.setCustomValidity('')">
+
+            <label for="email">Email</label>
+            <input type="email" name="email" required>
+
+            <label for="message">Message</label>
+            <textarea name="message" cols="30" rows="10" required></textarea>
+
+            <button type="submit" id="button-sent">Send!</button>
+
+            <div class="thankyou_message">
+                <h3>Thank You!</h3>
+                <p>I'll get back to you soon, if I am not too busy with my university's assignments 😏😏😏.</p>
+            </div>
         </div>  
     </form>
 

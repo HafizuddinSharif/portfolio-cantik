@@ -172,7 +172,7 @@ p {
           box-sizing: border-box;
   text-decoration: none;
   color: white;
-  font-style: bold;
+  font-weight: bold;
   background: -webkit-gradient(linear, left top, left bottom, from(#A2DAFF), color-stop(67.71%, #0099FE));
   background: linear-gradient(180deg, #A2DAFF 0%, #0099FE 67.71%);
   -webkit-box-shadow: 0px 6px 14px 1px #A2DAFF;
@@ -519,6 +519,7 @@ p {
 }
 
 .contact-me-section .form-box textarea {
+  font-family: 'Roboto', sans-serif;
   width: 300px;
   resize: none;
   border: 1px solid #72C7FF;
@@ -530,6 +531,44 @@ p {
   -webkit-box-shadow: 0 0 10px #719ECE;
           box-shadow: 0 0 10px #719ECE;
   caret-color: #39B0FF;
+}
+
+.contact-me-section .form-box button {
+  display: block;
+  width: 130px;
+  height: 32px;
+  border-radius: 10px;
+  padding: 6px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+  border: none;
+  background: -webkit-gradient(linear, left top, left bottom, from(#A2DAFF), color-stop(67.71%, #0099FE));
+  background: linear-gradient(180deg, #A2DAFF 0%, #0099FE 67.71%);
+  -webkit-box-shadow: 0px 6px 14px 1px #A2DAFF;
+          box-shadow: 0px 6px 14px 1px #A2DAFF;
+  margin: 10px 0;
+}
+
+.contact-me-section .form-box button:hover {
+  cursor: pointer;
+}
+
+.contact-me-section .form-box .thankyou_message {
+  visibility: hidden;
+  color: green;
+}
+
+.contact-me-section .form-box .thankyou_message h3 {
+  margin-bottom: 0;
+}
+
+.contact-me-section .form-box .thankyou_message p {
+  font-size: 16px;
+  margin: 5px 0;
 }
 
 @media only screen and (min-width: 768px) {
