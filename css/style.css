@@ -516,10 +516,12 @@ p {
 .contact-me-section .form-box input {
   width: 300px;
   border: 1px solid #72C7FF;
+  padding: 5px;
 }
 
 .contact-me-section .form-box textarea {
   font-family: 'Roboto', sans-serif;
+  padding: 5px;
   width: 300px;
   resize: none;
   border: 1px solid #72C7FF;

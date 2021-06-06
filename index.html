@@ -143,15 +143,15 @@
             <h2>Want to <span class="blue-font">work</span> with <span class="blue-font">me</span>? Contact Me!</h2>
 
             <label for="name">Name</label>
-            <input type="text" name="name" pattern="^[a-zA-Z]+$" required
+            <input type="text" name="name" pattern="^[a-zA-Z]+$" required placeholder="Your name for me to call"
             oninvalid="this.setCustomValidity('No numbers or special characters')"
             oninput="this.setCustomValidity('')">
 
             <label for="email">Email</label>
-            <input type="email" name="email" required>
+            <input type="email" name="email" required placeholder="Your email for me to reach you">
 
             <label for="message">Message</label>
-            <textarea name="message" cols="30" rows="10" required></textarea>
+            <textarea name="message" cols="30" rows="10" maxlength="500" required placeholder="Your feedback or inquiry. 500 characters max"></textarea>
 
             <button type="submit" id="button-sent">Send!</button>
 

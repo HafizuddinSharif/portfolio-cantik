@@ -1,6 +1,7 @@
 const burgerMenu = document.getElementById('burgerMenu');
 const closeMenu = document.getElementById('closeMenu');
 const navBar = document.getElementById('navbar');
+const sendButton = document.getElementById('button-sent')
 
 // Handling navbar
 
@@ -138,8 +139,14 @@ for (var i = 0, len = navButtons.length; i < len; i++) {
             }
             var thankYouMessage = form.querySelector(".thankyou_message");
             if (thankYouMessage) {
+
                 thankYouMessage.style.visibility = "visible";
 
+                // Disabling send button after being clicked
+                sendButton.disabled = true;
+                sendButton.style.cursor = 'not-allowed';
+
+                // Animation of thank you message
                 thankYouMessage.animate([
                     {transform: '', opacity: 0, offset: 0},
                     {transform: '', opacity: 1, offset: 0.2},
@@ -155,6 +162,19 @@ for (var i = 0, len = navButtons.length; i < len; i++) {
                 })
 
                 
+                sendButton.animate([
+                    {transform: '', offset: 0},
+                    {transform: '', background: 'grey', opacity: 0.2, boxShadow: 'none', offset: 1}
+                    ], {
+                    duration: 1000,
+                    easing: 'linear',
+                    delay: 0,
+                    iterations: 1,
+                    direction: 'normal',
+                    fill: 'forwards'
+                })
+
+
             }
           }
       };
