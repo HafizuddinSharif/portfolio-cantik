@@ -4,6 +4,7 @@ const navBar = document.getElementById('navbar');
 const sendButton = document.getElementById('button-sent')
 
 // Handling navbar
+// ================
 
 let navbarOpen = false;
 
@@ -59,7 +60,38 @@ for (var i = 0, len = navButtons.length; i < len; i++) {
   navButtons[i].addEventListener("click", openNavbar);
 }
 
+// Handling some cool animation
+// =============================
+
+$('.fade-in').css('opacity', 0)
+
+$(document).scroll(function() {
+
+  var y = $(this).scrollTop();
+
+  // Show element after user scrolls past 
+  // the top edge of its parent 
+
+  if (true) {
+    $('.fade-in').each(function() {
+
+      const t = $(this).offset().top - 400;
+
+      console.log(y, t)
+      
+      if (y > t) {
+        $(this).animate({
+          opacity: 1
+        }, 500, function() {})
+      }
+  
+    });
+  }
+  
+});
+
 // Handling my HTML contact-me form
+// =================================
 
 (function() {
     // get all data in form and return object

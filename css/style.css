@@ -612,10 +612,12 @@ p {
 }
 
 .footer-section {
-  margin-top: 100px;
-  padding: 23px 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  position: absolute;
+  top: 475vh;
+  width: 100%;
+  padding: 10px 15%;
   background-color: #72C7FF;
 }
 
@@ -653,7 +655,7 @@ p {
 
 @media only screen and (min-width: 768px) {
   .footer-section {
-    padding: 15px 15%;
+    top: 425vh;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
