@@ -242,11 +242,23 @@ p {
   }
 }
 
+.header-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
 .header-section .main-pic {
   width: 300px;
+  margin: auto;
 }
 
 .header-section .personal-description {
+  margin: auto;
   display: inline-block;
   width: 300px;
   text-align: left;
@@ -267,9 +279,6 @@ p {
 
 @media only screen and (min-width: 768px) {
   .header-section {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: reverse;
         -ms-flex-direction: row-reverse;
@@ -350,7 +359,7 @@ p {
   z-index: 25;
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 1200px) {
   .tech-stack-section h2 {
     display: inline-block;
     margin: auto;
@@ -508,6 +517,19 @@ p {
   }
 }
 
+@media only screen and (min-width: 1200px) {
+  .portfolio-section .portfolio-list {
+    width: 70%;
+    margin: 0 auto;
+  }
+  .portfolio-section .portfolio-list .portfolio-block .portfolio-img {
+    height: 400px;
+    width: 700px;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+  }
+}
+
 .contact-me-section {
   margin-top: 60px;
 }
@@ -598,7 +620,7 @@ p {
     display: -ms-flexbox;
     display: flex;
     width: 70%;
-    margin: auto;
+    margin: 200px auto;
   }
   .contact-me-section .form-box {
     width: 700px;
@@ -614,7 +636,6 @@ p {
 .footer-section {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  position: absolute;
   top: 525vh;
   width: 100%;
   padding: 10px 15%;
@@ -655,7 +676,6 @@ p {
 
 @media only screen and (min-width: 768px) {
   .footer-section {
-    top: 450vh;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;

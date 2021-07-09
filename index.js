@@ -64,6 +64,7 @@ for (var i = 0, len = navButtons.length; i < len; i++) {
 // =============================
 
 $('.fade-in').css('opacity', 0)
+$('.fade-in-special').css('opacity', 0)
 
 $(document).scroll(function() {
 
@@ -72,21 +73,33 @@ $(document).scroll(function() {
   // Show element after user scrolls past 
   // the top edge of its parent 
 
-  if (true) {
-    $('.fade-in').each(function() {
+  $('.fade-in').each(function() {
 
-      const t = $(this).offset().top - 400;
+    const t = $(this).offset().top - 400;
 
-      console.log(y, t)
-      
-      if (y > t) {
-        $(this).animate({
-          opacity: 1
-        }, 500, function() {})
-      }
-  
-    });
-  }
+    // console.log(y)
+    
+    if (y > t) {
+      $(this).animate({
+        opacity: 1
+      }, 500, function() {})
+    }
+
+  });
+
+  $('.fade-in-special').each(function() {
+
+    const p = $(this).offset().top - 700;
+
+    console.log(y, p)
+
+    if (y > p) {
+      $(this).animate({
+        opacity: 1
+      }, 500, function() {})
+    }
+
+  });
   
 });
 
