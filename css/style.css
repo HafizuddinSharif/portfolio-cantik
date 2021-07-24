@@ -308,6 +308,8 @@ p {
   }
   .header-section .main-pic {
     width: 400px;
+    margin: 0;
+    margin-left: auto;
   }
 }
 
@@ -488,8 +490,8 @@ p {
     text-align: left;
   }
   .portfolio-section .portfolio-list {
-    width: 85%;
-    margin-left: auto;
+    width: 70%;
+    margin: 0 auto;
   }
   .portfolio-section .portfolio-list .portfolio-block {
     display: -webkit-box;
@@ -505,28 +507,23 @@ p {
   }
   .portfolio-section .portfolio-list .portfolio-block .portfolio-description {
     margin: auto 0;
+    width: 350px;
   }
   .portfolio-section .portfolio-list .portfolio-block .the-btn {
     width: 300px;
   }
   .portfolio-section .portfolio-list .portfolio-block .portfolio-img {
-    height: 300px;
-    width: 500px;
-    border-top-right-radius: 0;
-    border-bottom-right-radius: 0;
+    width: 400px;
+    height: 250px;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
   }
 }
 
-@media only screen and (min-width: 1200px) {
-  .portfolio-section .portfolio-list {
-    width: 70%;
-    margin: 0 auto;
-  }
+@media only screen and (min-width: 1400px) {
   .portfolio-section .portfolio-list .portfolio-block .portfolio-img {
     height: 400px;
     width: 700px;
-    border-top-right-radius: 30px;
-    border-bottom-right-radius: 30px;
   }
 }
 
